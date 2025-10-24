@@ -25,36 +25,40 @@ cd path/to/your/project
 - **JSON** – Data format used for request and response bodies
 
 
-🖼️ Example Endpoints
-Method	Endpoint	Description
-GET	/users	View all users
-POST	/users	Add a new user
-PUT	/users/<id>	Update existing user by ID
-DELETE	/users/<id>	Delete user by ID
+## 🌐 API Endpoints
+
+The API provides the following endpoints for user management:
+
+| Method | Endpoint        | Description                         | Request Body (JSON) Example |
+|--------|----------------|-------------------------------------|-----------------------------|
+| GET    | `/users`        | Fetch all users in memory           | N/A                         |
+| POST   | `/users`        | Add a new user                      | `{ "name": "Afnaan", "email": "afnaan@example.com" }` |
+| PUT    | `/users/<id>`   | Update existing user by ID          | `{ "email": "afnaan01@example.com" }` |
+| DELETE | `/users/<id>`   | Delete a user by ID                 | N/A                         |
 
 ## 🖼️ Example Output
 ![CMD RUN](OUTPUT.png)
 ![WEBSITE](OUTPUT2.png)
 
-🧪 Testing Performed Using Postman with Output
+## 🧪 Testing Performed Using Postman with Output
 1. GET /users
-Description: Fetch all users in memory.
+- Description: Fetch all users in memory.
 
 ![GET METHOD](GET(output).png)
 
 2. POST /users
-Description: Add a new user.
+- Description: Add a new user.
 
 ![POST METHOD](POST(output).png)
 
 3. PUT /users/2
-Description: Update existing user.
+- Description: Update existing user.
 
 ![PUT METHOD](PUT(output).png)
 ![GET METHOD](GET(output2).png)
 
 4. DELETE /users/1
-Description: Delete a user by ID.
+- Description: Delete a user by ID.
 
 ![DELETE METHOD](DELETE(output).png)
 ![GET METHOD](GET(output3).png)
