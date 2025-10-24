@@ -11,7 +11,7 @@ It allows you to **Create, Read, Update, and Delete (CRUD)** user data stored in
 3. Go to the folder where app.py (or your Flask file) is saved:
 cd path/to/your/project
 4. Run the file:
-    python app.py
+    python RestAPI_app.py
 5. The API will run on:
     http://127.0.0.1:5000/
 
@@ -70,4 +70,5 @@ The API provides the following endpoints for user management:
 
 ## 👨‍💻 Author
 **Fahim Shaikh**  
+
 SY BTECH in Computer Science & Engineering
